@@ -81,7 +81,7 @@ a {
 .popular-collection {
     margin: 0 auto;
     max-width: 1047px;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
 }
 
 .popular-heading {
@@ -143,10 +143,66 @@ a {
     margin-top: 27px;
     margin-bottom: 17px;
 }
-.see-more{
+
+.see-more {
     font-weight: 700;
     color: rgba(224, 44, 109, 0.87);
     margin-left: 950px;
+}
+
+/* feature section styles */
+.feature {
+    margin: 0 auto;
+    max-width: 1110px;
+
+}
+
+.feature-div {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+.feature-heading {
+    max-width: 610px;
+    color: rgb(10, 8, 38);
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-top: 23px;
+}
+
+.feature-content {
+    font-weight: 700;
+    max-width: 501px;
+    color: rgb(108, 108, 108);
+}
+
+.feature-btn {
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    width: 155px;
+    height: 44px;
+    font-weight: 700;
+}
+
+/* footer styles */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(10, 8, 38);
+    color: white;
+}
+.footer-container i{
+    color: white;
+    font-size: 50px;
+}
+.icons{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 /* responsive media query starts */
 @media screen and (max-width: 576px) {
@@ -155,8 +211,8 @@ a {
         gap: 20px;
     }
 
-    .hero {
-        flex-direction: column;
+    .hero ,.feature-div{
+        /* flex-direction: column; */
         flex-direction: column-reverse;
         gap: 50px;
     }
@@ -164,15 +220,25 @@ a {
     .logo-container {
         grid-template-columns: repeat(4, 1fr);
     }
-    .card-container{
+
+    .card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
-    .popular-collection{
+
+    .popular-collection {
         margin: 0 auto;
     }
-    .see-more{
+
+    .see-more {
         margin-left: 200px;
+    }
+    .feature{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
 }
